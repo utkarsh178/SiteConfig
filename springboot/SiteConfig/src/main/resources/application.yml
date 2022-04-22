@@ -1,0 +1,49 @@
+
+server:
+  port: 8081
+#  jetty:
+#    accesslog:
+#      enabled: true
+#      append: true
+#      filename: ./logs/access-yyyy_mm_dd.log
+#      file-date-format: yyyy_MM_dd
+#      retention-period: 10
+#      custom-format: UTC
+#      format: EXTENDED_NCSA
+
+#logging:
+#  file:
+#    name: ./logs/application.log
+#  logback:
+#    rollingpolicy:
+#      max-history: 10
+#      max-file-size: 100KB
+#      total-size-cap: 1MB
+#      clean-history-on-start: true
+#  level:
+#    ROOT: ERROR
+#    com.peapod: DEBUG
+#    com.google.code: TRACE
+#  pattern:
+#    console: "%X{X-Request-ID} %X{X-Jwt-User} %highlight(%-5level) %cyan(%logger{15}) - %msg %n"
+#    file: "%X{X-Request-ID} %X{X-Jwt-User} %d %p %c{1.} [%t] %m%n"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/site-config-db
+    username: postgres
+    password: Test1234
+    hikari:
+      connection-timeout: 15000
+      maximum-pool-size: 1
+  jpa:
+    database: postgresql
+  jackson:
+    deserialization:
+      adjust-dates-to-context-time-zone: false
+    time-zone: UTC
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+
+debug: true
