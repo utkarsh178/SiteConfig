@@ -17,9 +17,10 @@ CREATE TABLE pillar
 CREATE TABLE environment
 (
    environmentId          VARCHAR(36) PRIMARY KEY,
-   environmentCode        VARCHAR(4) NOT NULL,
+   environmentCode        VARCHAR(36) NOT NULL,
    environmentName        VARCHAR(100) NOT NULL,
-   pillarId               VARCHAR(36) NOT NULL
+   pillarId               VARCHAR(36) NOT NULL,
+   brandId               VARCHAR(36) NOT NULL
 );
 
 CREATE TABLE flags

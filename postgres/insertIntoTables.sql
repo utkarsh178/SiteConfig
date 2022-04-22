@@ -25,7 +25,13 @@ INSERT INTO environment(environmentId, environmentCode, environmentName, pillarI
 INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('7','dev01', 'Development Environment 1', '1','7');
 
 
-INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('1','dev02', 'Development Environment 2', '1','1');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('8','dev02', 'Development Environment 2', '1','1');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('9','dev02', 'Development Environment 2', '1','2');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('10','dev02', 'Development Environment 2', '1','3');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('11','dev02', 'Development Environment 2', '1','4');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('12','dev02', 'Development Environment 2', '1','5');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('13','dev02', 'Development Environment 2', '1','6');
+INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('14','dev02', 'Development Environment 2', '1','7');
 
 INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('1','dev03', 'Development Environment 3', '1','1');
 
@@ -43,3 +49,7 @@ INSERT INTO environment(environmentId, environmentCode, environmentName, pillarI
 
 INSERT INTO environment(environmentId, environmentCode, environmentName, pillarId, brandId) VALUES ('1','dev10', 'Development Environment 10', '1','1');
 
+-- Insert into flags
+
+
+INSERT INTO flags(flagId,environmentId,flagName,flagValue) VALUES ('1','1','feature_marketplace','true')
